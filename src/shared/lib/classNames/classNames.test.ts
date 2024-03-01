@@ -1,4 +1,4 @@
-import {classNames} from "shared/lib/classNames/classNames";
+import { classNames } from 'shared/lib/classNames/classNames'
 
 describe('classNames', () => {
     test('width only first param', () => {
@@ -14,7 +14,7 @@ describe('classNames', () => {
         const expected = 'someClass class1 class2 hovered visible'
         expect(classNames(
             'someClass',
-            {hovered: true, visible: true},
+            { hovered: true, visible: true },
             ['class1', 'class2']
         )).toBe(expected)
     })
@@ -23,7 +23,7 @@ describe('classNames', () => {
         const expected = 'someClass class1 class2 hovered'
         expect(classNames(
             'someClass',
-            {hovered: true, visible: false},
+            { hovered: true, visible: false },
             ['class1', 'class2']
         )).toBe(expected)
     })
@@ -32,7 +32,7 @@ describe('classNames', () => {
         const expected = 'someClass class1 class2 hovered'
         expect(classNames(
             'someClass',
-            {hovered: true, visible: undefined},
+            { hovered: true, visible: undefined },
             ['class1', 'class2']
         )).toBe(expected)
     })

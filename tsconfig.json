@@ -4,7 +4,7 @@
     "noImplicitAny": true,
     "module": "ESNext",
     "target": "es5",
-    "types": ["@testing-library/jest-dom"],
+    "types": ["@testing-library/jest-dom", "node"],
     "jsx": "react-jsx",
     "allowJs": true,
     "moduleResolution": "node",
@@ -14,7 +14,10 @@
     },
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "lib": [ "es2015" ]
+    "lib": [
+      "es2015",
+      "dom"
+    ]
   },
   "ts-node": {
     "compilerOptions": {
