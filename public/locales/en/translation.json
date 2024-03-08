@@ -1,9 +1,18 @@
 {
-  "Мова" : "EN",
+  "Мова" : "English",
+  "Коротка мова" : "En",
   "Тестовий текст" : "Example text",
   "Переклад" : "Translate",
+  "Про нас" : " About",
+  "Головна" : "Main",
   "Сторінка не знайдена": "Page not found",
   "Оновити сторінку": "Update Page",
   "Щось пішло не так": "Something went wrong",
-  "Звернути": "Toggle"
+  "Звернути": "Toggle",
+  "Увійти": "LogIn",
+  "Введіть Імʼя": "Enter Username",
+  "Введіть Пароль": "Enter Password",
+  "Авторизація": "Authorization",
+  "Не правильне імʼя чи пароль": "Wrong username or password",
+  "Вийти": "Logout"
 }

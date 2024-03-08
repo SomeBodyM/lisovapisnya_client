@@ -4,7 +4,8 @@ declare module '*.scss' {
   export = classNames
 }
 
-declare const __IS_DEV__: boolean
+declare const __IS_DEV__: boolean;
+declare const __API__: string
 
 declare module '*.png'
 declare module '*.jpg'
@@ -14,3 +15,7 @@ declare module '*.svg' {
     const SVG: React.VFC<React.SVGProps<SVGSVGElement>>
     export default SVG
 }
+
+type DeepPartial<T> = T extends object ? {
+    [P in keyof T]?: DeepPartial<T[P]>;
+} : T;

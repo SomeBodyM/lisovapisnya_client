@@ -1,4 +1,5 @@
 :root {
+    /* Шрифти */
     --font-family-main: "Courier New", "Times New Roman", serif;
     --font-size-m: 16px;
     --font-line-m: 24px;
@@ -15,4 +16,12 @@
     --navbagr-height: 50px;
     --sidebar-width: 300px;
     --sidebar-width-collapsed: 80px;
+
+    /* Z-індекс */
+    --modal-z-index: 10;
+
+    /* Кольори */
+    --overlay-color: rgb(0 0 0 / 60%);
+    --red-light: #f00;
+    --red-dark: #b00505;
 }

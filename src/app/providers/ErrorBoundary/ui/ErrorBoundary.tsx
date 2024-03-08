@@ -28,6 +28,7 @@ class ErrorBoundary extends React.Component<ErrorBoundaryProps, ErrorBoundarySta
         const { children } = this.props
 
         if (hasError) {
+            console.log('ffff')
             return (
                 <Suspense fallback=''>
                     <PageError/> 

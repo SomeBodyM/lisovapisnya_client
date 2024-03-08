@@ -17,6 +17,10 @@ const config: Config = {
     // cacheDirectory: "/private/var/folders/kn/9jz34yxn6hb43ss3q0q8v3_r0000gp/T/jest_dy",
 
     // Automatically clear mock calls, instances, contexts and results before every test
+    globals: {
+        __IS_DEV__: true,
+        __API__: '',
+    },
     clearMocks: true,
     testEnvironment: "jsdom",
     coveragePathIgnorePatterns: [
@@ -94,7 +98,7 @@ const config: Config = {
     // globalTeardown: undefined,
 
     // A set of global variables that need to be available in all test environments
-    // globals: {},
+
 
     // The maximum amount of workers used to run your tests. Can be specified as % or a number. E.g. maxWorkers: 10% will use 10% of your CPU amount + 1 as the maximum worker number. maxWorkers: 2 will use a maximum of 2 workers.
     // maxWorkers: "50%",
