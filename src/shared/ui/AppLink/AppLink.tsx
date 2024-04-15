@@ -5,7 +5,7 @@ import {type FC, memo} from 'react'
 
 export enum AppLinkTheme {
     PRIMARY = 'primary',
-    SECONDARY = 'secondary'
+    NORMAL = 'normal'
 }
 
 interface AppLinkProps extends LinkProps {
@@ -17,7 +17,7 @@ export const AppLink: FC<AppLinkProps> = memo((props) => {
     const {
         to,
         children,
-        theme = AppLinkTheme.PRIMARY,
+        theme = AppLinkTheme.NORMAL,
         className,
         ...otherProps
     } = props

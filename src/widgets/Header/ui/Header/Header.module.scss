@@ -1,0 +1,27 @@
+.Navbar {
+    width: 100%;
+    height: var(--navbar-height);
+    background: transparent;
+    padding: 45px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    top: 0;
+}
+
+.content {
+    max-width: 1320px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.links {
+    margin-left: auto;
+}
+
+.mainLink {
+    margin-right: 15px;
+}

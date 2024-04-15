@@ -1,25 +1,24 @@
 @import "reset";
 @import "variables/global";
-@import "themes/dark";
-@import "themes/normal";
-@import "themes/orange";
 
 .app,
 .app_modal {
     font: var(--font-m);
-    color: var(--primary-color);
+    font-weight: normal;
+    color: var(--inverted-main-color)
 }
 
 .app {
-    background: var(--bg-color);
+    background: var(--main-color);
     min-height: 100vh;
 }
 
 .content-page {
     display: flex;
+    position: relative;
+    flex-direction: column;
 }
 
 .page-wrapper {
     flex-grow: 1;
-    padding: 20px;
 }

@@ -1,14 +1,14 @@
 :root {
     /* Шрифти */
-    --font-family-main: "Courier New", "Times New Roman", serif;
-    --font-size-m: 16px;
-    --font-line-m: 24px;
+    --font-family-main: "JetBrains Mono", "Times New Roman", serif;
+    --font-size-m: 14px;
+    --font-line-m: 22px;
     --font-m: var(--font-size-m) / var(--font-line-m) var(--font-family-main);
-    --font-size-l: 24px;
-    --font-line-l: 32px;
+    --font-size-l: 22px;
+    --font-line-l: 30px;
     --font-l: var(--font-size-l) / var(--font-line-l) var(--font-family-main);
-    --font-size-xl: 32px;
-    --font-line-xl: 40px;
+    --font-size-xl: 30px;
+    --font-line-xl: 38px;
     --font-xl: var(--font-size-xl) / var(--font-line-xl) var(--font-family-main);
 
     /* Розміри */
@@ -21,7 +21,7 @@
     --modal-z-index: 10;
 
     /* Кольори */
-    --overlay-color: rgb(0 0 0 / 60%);
-    --red-light: #f00;
-    --red-dark: #b00505;
+    --main-color: #fff;
+    --inverted-main-color: #0f0b0a;
+    --primary-color: #c43e13;
 }

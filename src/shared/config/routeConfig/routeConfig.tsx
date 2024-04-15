@@ -2,9 +2,8 @@ import { RouteProps } from 'react-router-dom'
 import { MainPage } from 'pages/MainPage'
 import { AboutPage } from 'pages/AboutPage'
 import { NotFoundPage } from 'pages/NotFoundPage'
-import {ProfilePage} from "pages/ProfilePage";
-import {ArticlesPage} from "pages/ArticlesPages";
-import {ArticleDetailsPage} from "pages/ArticleDetailsPage";
+import {PortfolioPage} from "pages/PortfolioPage";
+import {PricePage} from "pages/PricePage";
 
 export type AppRoutesProps = RouteProps & {
     authOnly?: boolean;
@@ -13,9 +12,8 @@ export type AppRoutesProps = RouteProps & {
 export enum AppRoutes {
     MAIN = 'main',
     ABOUT = 'about',
-    PROFILE = 'profile',
-    ARTICLES = 'articles',
-    ARTICLE_DETAILS = 'article_details',
+    PORTFOLIO = 'portfolio',
+    PRICE = 'price',
     //last route
     NOT_FOUND = 'not_found',
 }
@@ -23,9 +21,8 @@ export enum AppRoutes {
 export const RoutePath: Record<AppRoutes, string> = {
     [AppRoutes.MAIN]: '/',
     [AppRoutes.ABOUT]: '/about',
-    [AppRoutes.PROFILE]: '/profile',
-    [AppRoutes.ARTICLES]: '/articles',
-    [AppRoutes.ARTICLE_DETAILS]: '/articles/',
+    [AppRoutes.PRICE]: '/price',
+    [AppRoutes.PORTFOLIO]: '/portfolio',
     [AppRoutes.NOT_FOUND]: '*'
 }
 
@@ -38,22 +35,14 @@ export const routeConfig: Record<AppRoutes, AppRoutesProps> = {
         path: RoutePath.about,
         element: <AboutPage/>
     },
-    [AppRoutes.PROFILE]: {
-        path: RoutePath.profile,
-        element: <ProfilePage/>,
-        authOnly: true,
+    [AppRoutes.PRICE]: {
+        path: RoutePath.price,
+        element: <PricePage/>
     },
-    [AppRoutes.ARTICLES]: {
-        path: RoutePath.articles,
-        element: <ArticlesPage/>,
-        authOnly: true,
+    [AppRoutes.PORTFOLIO]: {
+        path: RoutePath.portfolio,
+        element: <PortfolioPage/>
     },
-    [AppRoutes.ARTICLE_DETAILS]: {
-        path: `${RoutePath.article_details}:id`,
-        element: <ArticleDetailsPage/>,
-        authOnly: true,
-    },
-
     //last
     [AppRoutes.NOT_FOUND]: {
         path: RoutePath.not_found,

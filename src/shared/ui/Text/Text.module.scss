@@ -1,15 +1,9 @@
-.Text {
-
-}
-
 .title {
-    font: var(--font-l);
-    color: var(--primary-color);
+    color: var(--main-color);
 }
 
 .text {
-    font: var(--font-m);
-    color: var(--secondary-color);
+    color: var(--main-color);
 }
 
 .error {
@@ -32,4 +26,41 @@
 
 .right {
     text-align: right;
+}
+
+.size_m {
+    .title {
+        font: var(--font-l);
+    }
+
+    .text {
+        font: var(--font-m);
+    }
+}
+
+.size_l {
+    .title {
+        font: var(--font-xl);
+    }
+
+    .text {
+        font: var(--font-l);
+    }
+}
+
+.size_lm {
+    .title {
+        font: var(--font-xl);
+    }
+
+    .text {
+        font: var(--font-m);
+    }
+}
+
+.size_title {
+    .title{
+        font-size: 50px;
+        line-height: 84px;
+    }
 }
