@@ -7,12 +7,8 @@ interface LoaderProps {
 
 export const Loader = ({ className }: LoaderProps) => {
     return (
-        <div className={classNames('lds-ellipsis', {}, [className])}>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+        <div className="loader">
+            <div className="justify-content-center jimu-primary-loading"></div>
         </div>
-
     )
 }

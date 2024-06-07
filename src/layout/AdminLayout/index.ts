@@ -1,1 +1,0 @@
-export {AdminLayoutAsync as AdminLayout} from './ui/AdminLayout/AdminLayout.async'

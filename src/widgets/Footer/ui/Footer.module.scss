@@ -3,7 +3,13 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    padding-bottom: 20px;
+    padding: 20px;
+}
+
+.leftBlock {
+    display: flex;
+
+    flex-direction: column;
 }
 
 .content {
@@ -14,8 +20,8 @@
     justify-content: space-between;
 }
 
-.leftBlock {
-
+.logo {
+    fill: var(--main-color);
 }
 
 .rightBlock {
@@ -47,4 +53,23 @@
     flex-direction: column;
     justify-content: center;
     align-items: start;
+}
+
+.toAdmin {
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .leftBlock {
+        align-items: start;
+    }
+
+    .rightBlock {
+        max-width: 100%;
+        margin-top: 40px;
+    }
 }

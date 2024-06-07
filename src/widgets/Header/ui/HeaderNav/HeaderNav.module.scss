@@ -1,7 +1,11 @@
 .HeaderNav {
-
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
-.link {
-  padding: 0 15px;
+@media screen and (max-width: 768px) {
+    .HeaderNav {
+        flex-direction: column;
+    }
 }

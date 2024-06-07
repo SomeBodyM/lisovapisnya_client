@@ -7,6 +7,15 @@
     }
 }
 
+.black {
+    color: var(--inverted-main-color);
+    text-decoration: none;
+
+    &:hover {
+        color: var(--primary-color);
+    }
+}
+
 .primary {
     color: var(--primary-color);
 }

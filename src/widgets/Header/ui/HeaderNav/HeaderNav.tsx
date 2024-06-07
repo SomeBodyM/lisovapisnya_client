@@ -1,25 +1,36 @@
-import {classNames} from "shared/lib/classNames/classNames";
+import {classNames, Mods} from "shared/lib/classNames/classNames";
 import cls from './HeaderNav.module.scss';
 import {useTranslation} from "react-i18next";
 import {memo} from "react";
-import {AppLink} from "shared/ui/AppLink/AppLink";
+import {AppLink, AppLinkTheme} from "shared/ui/AppLink/AppLink";
 import {RoutePath} from "shared/config/routeConfig/routeConfig";
+import {useLocation} from "react-router-dom";
+import {HeaderNavBarItems} from "../../model/HeaderNavBarItems";
+import {HeaderNavItem} from "widgets/Header/ui/HeaderNavItem/HeaderNavItem";
 
 interface HeaderNavProps {
-    className?: string
+    className?: string;
+    isMainPage?: boolean;
+    closeMenu?: () => void;
 }
 
 export const HeaderNav = memo((props: HeaderNavProps) => {
     const {
         className,
+        isMainPage,
+        closeMenu
     } = props;
-    const {t} = useTranslation();
 
     return (
         <nav className={classNames(cls.HeaderNav, {}, [className])}>
-            <AppLink className={cls.link} to={RoutePath.portfolio}>{t('PORTFOLIO')}</AppLink>
-            <AppLink className={cls.link} to={RoutePath.about}>{t('ABOUT ME')}</AppLink>
-            <AppLink className={cls.link} to={RoutePath.price}>{t('PRICE')}</AppLink>
+            {HeaderNavBarItems.map((item) => (
+                <HeaderNavItem
+                    item={item}
+                    isMainPage={isMainPage}
+                    key={item.path}
+                    onClose={closeMenu}
+                />
+            ))}
         </nav>
     );
 });

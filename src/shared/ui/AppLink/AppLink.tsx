@@ -5,7 +5,8 @@ import {type FC, memo} from 'react'
 
 export enum AppLinkTheme {
     PRIMARY = 'primary',
-    NORMAL = 'normal'
+    NORMAL = 'normal',
+    BLACK = 'black'
 }
 
 interface AppLinkProps extends LinkProps {

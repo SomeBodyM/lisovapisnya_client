@@ -3,7 +3,10 @@ import cls from './Text.module.scss'
 
 export enum TextTheme {
     PRIMARY = 'primary',
+    NORMAL = 'normal',
+    BLACK = 'black',
     ERROR = 'error',
+    ITALIC = 'italic'
 }
 
 export enum TextAlign {
@@ -15,8 +18,9 @@ export enum TextAlign {
 export enum TextSize {
     M= 'size_m',
     L = 'size_l',
-    LM= 'size_lm',
+    UPPER_M = 'size_upper_m',
     TITLE= 'size_title',
+    UNDER_TITLE = 'under_title'
 }
 
 interface TextProps {
@@ -34,7 +38,7 @@ export const Text = (props: TextProps) => {
         title,
         text,
         align = TextAlign.LEFT,
-        theme= TextTheme.PRIMARY,
+        theme= TextTheme.NORMAL,
         size = TextSize.M
     } = props;
 

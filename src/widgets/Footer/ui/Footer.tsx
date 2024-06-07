@@ -1,11 +1,16 @@
 import {classNames} from "shared/lib/classNames/classNames";
 import cls from './Footer.module.scss';
 import {useTranslation} from "react-i18next";
-import React, {memo} from "react";
+import React, {memo, useCallback, useState} from "react";
 import {RoutePath} from "shared/config/routeConfig/routeConfig";
-import {Icon} from "shared/ui/Icon/Icon";
-import LogoPhoto from "shared/assets/images/portfolio.svg";
 import {AppLink} from "shared/ui/AppLink/AppLink";
+import {Logo} from "shared/ui/Logo/Logo";
+import {Text, TextAlign, TextSize, TextTheme} from "shared/ui/Text/Text";
+import {Button, ButtonTheme} from "shared/ui/Button/Button";
+import {LoginModal} from "features/AuthByUserName";
+import {useSelector} from "react-redux";
+import {getUserAuthData, logoutAuth} from "entities/User";
+import {useAppDispatch} from "shared/lib/hooks/useAppDispatch/useAppDispatch";
 
 interface FooterProps {
     className?: string
@@ -16,14 +21,43 @@ export const Footer = memo((props: FooterProps) => {
         className,
     } = props;
     const {t} = useTranslation();
+    const auth = useSelector(getUserAuthData);
+    const dispatch = useAppDispatch();
+    const [isAuthModal, setIsAuthModal] = useState(false);
+    const onCloseModal = useCallback(() => {
+        setIsAuthModal(false);
+    }, []);
+
+    const onOpenModal = useCallback(() => {
+        setIsAuthModal(true);
+    }, []);
+
+    const logOut = useCallback(() => {
+        dispatch(logoutAuth());
+    }, [dispatch])
 
     return (
         <footer className={classNames(cls.Footer, {}, [className])}>
+            <LoginModal
+                isOpen={isAuthModal}
+                onClose={onCloseModal}
+            />
             <div className={cls.content}>
                 <div className={cls.leftBlock}>
-                    <AppLink to={RoutePath.main}>
-                        <Icon Svg={LogoPhoto}/>
-                    </AppLink>
+                    <Button theme={ButtonTheme.CLEAR} onClick={onOpenModal}>
+                        <Logo 
+                            isMainPage={true}
+                        />
+                    </Button>
+                    {auth && 
+                        <Button 
+                            theme={ButtonTheme.CLEAR}
+                            onClick={logOut}
+                            className={cls.toAdmin}
+                        >
+                            {t('Log out →')}
+                        </Button>
+                    }
                 </div>
                 <div className={cls.rightBlock}>
                     <nav className={cls.nav}>

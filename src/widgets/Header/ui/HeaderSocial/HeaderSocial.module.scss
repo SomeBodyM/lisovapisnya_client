@@ -1,9 +1,31 @@
 .link {
-    color: var(--main-color);
-    padding: 0 15px;
+    color: var(--inverted-main-color);
     text-decoration: none;
 
     &:hover {
         color: var(--primary-color);
+    }
+}
+
+.isMainPage {
+    .link {
+        color: var(--main-color);
+
+        &:hover {
+            color: var(--primary-color);
+        }
+    }
+}
+
+.HeaderSocial {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+}
+
+@media screen and (max-width: 768px){
+    .HeaderSocial {
+        margin-bottom: 190px;
     }
 }

@@ -2,10 +2,10 @@
     cursor: pointer;
     color: var(--primary-color);
     padding: 6px 15px;
+    border-radius: var(--border-radius);
 
     &:hover {
         opacity: 0.7;
-        fill-opacity: 70%;
     }
 }
 
@@ -34,9 +34,9 @@
 }
 
 .background {
-    background: var(--bg-color);
-    color: var(--primary-color);
-    border: none;
+    background: var(--primary-color);
+    color: var(--main-color);
+    border: 1px solid var(--primary-color);
 }
 
 .backgroundInverted {
@@ -69,4 +69,8 @@
 
 .disabled {
     opacity: 0.5;
+
+    &:hover {
+        opacity: 0.5;
+    }
 }

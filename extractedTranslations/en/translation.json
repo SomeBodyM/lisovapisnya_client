@@ -1,10 +1,58 @@
 {
   "": "",
+  " lisovapisnyaa@gmail": {
+    "com": " lisovapisnyaa@gmail.com"
+  },
+  "@lisovapisnyaa": "@lisovapisnyaa",
   "ABOUT ME": "ABOUT ME",
+  "Add": "Add",
+  "Add to Favorites": "Add to Favorites",
+  "All Favorites collections are displayed on the homepage": "All Favorites collections are displayed on the homepage",
+  "Are you sure you want to delete item ?": "Are you sure you want to delete item ?",
+  "Are you sure you want to delete this task?": "Are you sure you want to delete this task?",
+  "Cancel": "Cancel",
+  "Change Status": "Change Status",
+  "Choose a file": "Choose a file",
+  "Close": "Close",
   "Comments": "Comments",
+  "Create": "Create",
+  "Create Category": "Create Category",
+  "Create Collection": "Create Collection",
+  "Create Photo": "Create Photo",
+  "Delete": "Delete",
+  "Do you want to change this collection status?": "Do you want to change this collection status?",
+  "Edit": "Edit",
+  "Empty Page (((": "Empty Page (((",
+  "Enter Category name": {
+    "": {
+      "": {
+        "": ""
+      }
+    }
+  },
+  "Enter title name": {
+    "": {
+      "": {
+        "": ""
+      }
+    }
+  },
+  "Is Horizontal Photo": "Is Horizontal Photo",
+  "Log out": "Log out",
+  "Log out →": "Log out →",
+  "M": "M",
+  "MY PORTFOLIO": "MY PORTFOLIO",
+  "MY PORTFOLIO →": "MY PORTFOLIO →",
+  "Once deleted, you will not be able to recover it": "Once deleted, you will not be able to recover it",
   "PORTFOLIO": "PORTFOLIO",
   "PRICE": "PRICE",
+  "PROFILE EDITOR": "PROFILE EDITOR",
+  "Password": "Password",
+  "Profile Editor": "Profile Editor",
   "Profile Page": "Profile Page",
+  "Select Photo": "Select Photo",
+  "Sorry, this page is empty": "Sorry, this page is empty",
+  "Username": "Username",
   "fb →": "fb →",
   "inst →": "inst →",
   "tg →": "tg →",
@@ -28,6 +76,7 @@
   "Надіслати": "Надіслати",
   "Назад": "Назад",
   "Не вказані данні": "Не вказані данні",
+  "Не вірний логін чи пароль": "Не вірний логін чи пароль",
   "Не правильне імʼя чи пароль": "Не правильне імʼя чи пароль",
   "Некоректний вік": "Некоректний вік",
   "Некоректні данні користувача": "Некоректні данні користувача",
@@ -36,6 +85,7 @@
   "Нік": "Нік",
   "Обовʼязкове поле": "Обовʼязкове поле",
   "Оновити сторінку": "Оновити сторінку",
+  "Перезавантажте сторінку": "Перезавантажте сторінку",
   "Помилка при загрузці статті": "Помилка при загрузці статті",
   "Помилка при редагуванні": "Помилка при редагуванні",
   "Попробуй знову": "Попробуй знову",

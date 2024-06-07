@@ -22,10 +22,13 @@
 .content {
     padding: 20px;
     border-radius: 12px;
-    background: var(--bg-color);
+    background: var(--main-color);
     transition: 0.3s transform;
     transform: scale(0.5);
-    max-width: 60%;
+    max-width: 90%;
+    min-width: 100px;
+    min-height: 100px;
+    width: fit-content;
 }
 
 .opened {

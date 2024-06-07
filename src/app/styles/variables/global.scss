@@ -1,6 +1,7 @@
 :root {
     /* Шрифти */
-    --font-family-main: "JetBrains Mono", "Times New Roman", serif;
+    --font-family-main: "JetBrains Mono", "Helvetica Neue", serif;
+    --font-family-primary: "Helvetica Neue", "JetBrains Mono", serif;
     --font-size-m: 14px;
     --font-line-m: 22px;
     --font-m: var(--font-size-m) / var(--font-line-m) var(--font-family-main);
@@ -10,18 +11,28 @@
     --font-size-xl: 30px;
     --font-line-xl: 38px;
     --font-xl: var(--font-size-xl) / var(--font-line-xl) var(--font-family-main);
+    --font-xl_primary: var(--font-size-xl) / var(--font-line-xl) var(--font-family-primary);
 
     /* Розміри */
-    --navbar-height: 50px;
-    --navbagr-height: 50px;
+    --navbar-height: 120px;
+    --navbar-mobile-height: 82px;
     --sidebar-width: 300px;
     --sidebar-width-collapsed: 80px;
+    --border-radius: 8px;
 
     /* Z-індекс */
-    --modal-z-index: 10;
+    --modal-z-index: 1000;
 
     /* Кольори */
     --main-color: #fff;
     --inverted-main-color: #0f0b0a;
     --primary-color: #c43e13;
+    --grey-color: #989191;
+    --error-red-color: #f00;
+    --menu-color: rgb(255 255 255 / 93%);
+    --light-grey-color: #d5d5d5;
+    --green-color: #356c2f;
+    --overlay-color: rgb(0 0 0 / 49%);
+    --skeleton-color: #eae6e6;
+    --skeleton-shadow: rgba(0 0 0 / 20%);
 }
