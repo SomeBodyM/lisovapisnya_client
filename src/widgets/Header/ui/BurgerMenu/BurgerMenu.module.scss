@@ -1,0 +1,102 @@
+.burger_menu {
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    div {
+        height: 1.5px;
+        width: 100%;
+        background-color: var(--inverted-main-color);
+        transition: all 0.3s ease;
+    }
+
+    @media (min-width: 768px) {
+        display: none;
+    }
+}
+
+.burger_menu_container {
+    width: 60%;
+
+    @media (max-width: 768px) {
+        width: auto;
+    }
+}
+
+.isWhite {
+    .bottomLine,
+    .midLine,
+    .topLine {
+        background: var(--main-color);
+    }
+}
+
+.menu {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    overflow-y: hidden;
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    transform: translateY(-110%);
+    transition: transform 0.3s ease;
+
+    @media (min-width: 768px) {
+        position: static;
+        justify-content: space-between;
+        transform: none;
+        background-color: transparent;
+        flex-direction: row;
+    }
+
+    &.open {
+        transform: translateY(var(--navbar-mobile-height));
+        height: calc(100vh - var(--navbar-mobile-height));
+        background: var(--menu-color);
+        backdrop-filter: blur(90px);
+    }
+}
+
+.topLine {
+    background: var(--inverted-main-color);
+}
+
+.midLine {
+    transition: opacity 0.9s;
+    opacity: 1;
+    background: var(--inverted-main-color);
+}
+
+.bottomLine {
+}
+
+.open {
+    .topLine {
+        transform-origin: 0% 0%;
+        width: 39px;
+        transform: rotate(39deg);
+        background: var(--inverted-main-color);
+        transition: transform 0.9s ease;
+    }
+
+    .midLine {
+        transition: opacity 0.3s;
+        opacity: 0;
+        background: var(--inverted-main-color);
+    }
+
+    .bottomLine {
+        transform-origin: 0% 0%;
+        width: 39px;
+        transform: rotate(-39deg);
+        transition: transform 0.9s ease;
+        background: var(--inverted-main-color);
+    }
+}

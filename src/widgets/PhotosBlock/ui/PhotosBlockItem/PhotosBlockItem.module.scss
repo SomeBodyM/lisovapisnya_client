@@ -1,0 +1,44 @@
+.PhotosBlockItem {
+    position: relative;
+    width: fit-content;
+}
+
+.admin {
+    padding-top: 10px;
+}
+
+.photoWrapper {
+    position: relative;
+}
+
+.iconWrapper {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    right: -10px;
+    width: 100%;
+    z-index: 50;
+}
+
+.likeBtn {
+    width: 30px;
+    height: 30px;
+    margin-top: 20px
+}
+
+.closeBtn {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: auto;
+    background: var(--main-color);
+}
+
+.icon {
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}

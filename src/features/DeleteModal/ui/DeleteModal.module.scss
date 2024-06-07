@@ -1,0 +1,16 @@
+.DeleteModal {
+    max-width: 600px;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: var(--border-radius);
+    border: 2px solid var(--inverted-main-color);
+}
+
+.btnWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid var(--primary-color);
+}

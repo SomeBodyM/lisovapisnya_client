@@ -1,0 +1,59 @@
+.Profile {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.content {
+    display: flex;
+    align-items: start;
+    gap: 30px;
+}
+
+.textWrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 300px;
+    width: 100%;
+}
+
+.imgBlock {
+    max-width: 426px;
+    width: 100%;
+    position: relative;
+}
+
+.fileLoader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 50%;
+}
+
+.media {
+    margin-top: 12px;
+}
+
+.mediaText {
+    margin-bottom: 20px;
+}
+
+.mediaField {
+    display: flex;
+    align-items: center;
+}
+
+.link {
+    color: var(--primary-color);
+    margin-left: 5px;
+}
+
+.skeletonMt {
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+}

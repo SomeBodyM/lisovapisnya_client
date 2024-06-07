@@ -1,0 +1,1 @@
+export {CategoryDetailsPageAsync as CategoryDetailsPage} from './ui/CategoryDetailsPage/CategoryDetailsPage.async'

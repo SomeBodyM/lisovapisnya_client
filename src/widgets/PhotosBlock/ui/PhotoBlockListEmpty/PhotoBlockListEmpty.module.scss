@@ -1,0 +1,12 @@
+.PhotoBlockListEmpty {
+    height: calc(100vh - var(--navbar-height));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block {
+    padding: 30px;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--primary-color);
+}

@@ -1,0 +1,73 @@
+.Alert {
+    min-width: 300px;
+    width: fit-content;
+    position: fixed;
+    margin-right: 10px;
+    border-radius: var(--border-radius);
+    background: var(--main-color);
+    top: 20px;
+    right: 0;
+    opacity: 1;
+    z-index: 10000;
+    animation: slideIn 0.5s ease-out, fadeOut 1s ease-in 4s forwards;
+}
+
+.AlertBg {
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    margin-right: 15px;
+}
+
+.success {
+    background: var(--light-grey-color);
+    color: var(--green-color);
+    border-left: 3px solid var(--green-color);
+
+    .icon {
+        fill: var(--green-color);
+    }
+}
+
+.error {
+    background: var(--error-red-opacity-color);
+    color: var(--error-red-color);
+    border-left: 5px solid var(--error-red-color);
+
+    .icon {
+        fill: var(--error-red-color);
+    }
+}
+
+.warning {
+    background: var(--warning-yellow-opacity-color);
+    color: var(--warning-yellow-color);
+    border-left: 5px solid var(--warning-yellow-color);
+
+    .icon {
+        fill: var(--warning-yellow-color);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        right: -100px;
+    }
+
+    to {
+        right: 0;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}

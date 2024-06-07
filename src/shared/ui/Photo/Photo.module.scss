@@ -1,0 +1,23 @@
+.Photo {
+    width: 100%;
+    object-fit: cover;
+}
+
+.small {
+    max-width: 426px;
+}
+
+.big {
+    max-width: 649px;
+}
+
+.horizontal {
+    max-width: 100%;
+}
+
+.square {
+    width: 100%;
+    height: fit-content;
+    max-width: 426px;
+    max-height: 426px;
+}

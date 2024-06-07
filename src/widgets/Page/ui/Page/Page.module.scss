@@ -1,0 +1,12 @@
+.Page {
+    margin: 0 auto;
+    padding: var(--navbar-height) 20px;
+    min-height: calc(100vh - var(--navbar-height));
+    max-width: 1360px;
+}
+
+@media screen and (max-width: 768px) {
+    .Page {
+        padding: var(--navbar-mobile-height) 20px;
+    }
+}

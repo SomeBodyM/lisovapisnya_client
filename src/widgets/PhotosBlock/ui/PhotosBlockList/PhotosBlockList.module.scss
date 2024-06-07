@@ -1,0 +1,11 @@
+.PhotosBlockList {
+    position: relative;
+}
+
+.listBlock {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 21px;
+    margin: 0 auto;
+}

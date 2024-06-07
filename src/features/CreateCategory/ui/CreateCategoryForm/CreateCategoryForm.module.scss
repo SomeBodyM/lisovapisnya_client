@@ -1,0 +1,31 @@
+.CreateCategoryForm {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.header {
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--primary-color);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.inputs {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.file {
+    margin: 20px auto;
+}
+
+.btnWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    border-top: 1px solid var(--primary-color);
+}

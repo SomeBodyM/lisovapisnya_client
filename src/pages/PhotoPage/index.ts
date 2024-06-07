@@ -1,0 +1,1 @@
+export {PhotoPageAsync as PhotoPage} from './ui/PhotoPage.async'
