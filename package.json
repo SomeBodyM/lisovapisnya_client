@@ -65,7 +65,6 @@
     "identity-obj-proxy": "^3.0.0",
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
-    "json-server": "^0.17.0",
     "loki": "^0.34.0",
     "mini-css-extract-plugin": "^2.8.0",
     "reg-cli": "^0.18.1",
